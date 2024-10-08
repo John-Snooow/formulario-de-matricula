@@ -23,18 +23,42 @@
           <h1>Formulario de Matricula</h1>
           <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
         
-          <form>
+          <form method="post" enctype="multipart/form-data">
             <fieldset class="child-infor">
-              <legend>Iformações da  Criança</legend>
+              <legend>Informações da Criança</legend>
 
               <div class="input-wrapper">
                 <label for="fullname">Nome completo</label>
-                <input id="fullname" type="text" placeholder="Qual o nome da crianças">
+                <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da crianças">
               </div>
 
                 <div class="input-wrapper">
                   <label for="birth">Data de Nascimento</label>
-                  <input type="date" id="birth" lang="pt-br">
+                  <input type="date" id="birth" name="birth" lang="pt-br">
+                </div>
+
+                <div class="select-warpper">
+                  <label for="gender">Sexo</label>
+                  <select name="gender" id="gender"></select>
+                  <option value="female">Feminino</option>
+                  <option value="male">masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </div>
+
+                <div class="textarea-wrapper">
+                  <label for="medical-info">Informações médicas</label>
+                  <textarea name="medical-info" id="medical-info"
+                  cols="30" rows="10"
+                  placeholder="A criaça possui alguma condição médica que a escola deve estar ciente? (se sim, especifique)"></textarea>
+                </div>
+
+                <div class="droparea-wrapper">
+                  <input type="file" id="birth-file" name="birth-file">
+                  <img src="assets/icons/cloud-upload.svg" alt="">
+                  <p>
+                    Clique aqui para <br>
+                    selecionar os arquivos
+                  </p>
                 </div>
 
             </fieldset>
