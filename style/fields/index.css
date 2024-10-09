@@ -52,3 +52,20 @@ input[type="date"]{ /*fazendo algumas modificações no icone de data*/
 select{
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }
+
+.address .flex{
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+    opacity: .5;
+}
+
+input{
+    &[disabled]{
+        background-color: var(--surface-disabled);
+        border: 1px solid var(--stroke-primary);
+
+        color: var(--text-primary);
+    }
+}
