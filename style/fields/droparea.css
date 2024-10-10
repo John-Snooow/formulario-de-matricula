@@ -1,5 +1,6 @@
 .dropzone{
-    border: 1px dashed var(--stroke-default);
+    border: 2px dashed transparent;  /*para ajudar o layout a não pular quando eu clicar em algum campo*/
+    outline: 1px dashed var(--stroke-default);
     border-radius: .25rem;
 
     display: grid;
@@ -23,7 +24,7 @@
     }
 
     &:hover, &:has(inpt:focus){/*&:has(inpt:focus) para fazer uma verificação e quando eu clicar tab no navegador vai saltar de uma a uma das opções das caixas*/
-        border-width: 2px;
+        outline-width: 0;
         border-color: var(--stroke-highlight);
         background-color: var(--surface-secondary);
         
