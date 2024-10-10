@@ -24,7 +24,7 @@
 
     &:hover, &:has(inpt:focus){/*&:has(inpt:focus) para fazer uma verificação e quando eu clicar tab no navegador vai saltar de uma a uma das opções das caixas*/
         border-width: 2px;
-        border-color: var(--stroke-highlinght);
+        border-color: var(--stroke-highlight);
         background-color: var(--surface-secondary);
         
 
@@ -33,7 +33,7 @@
         }
 
         & svg path{
-            stroke: var(--stroke-highlinght);
+            stroke: var(--stroke-highlight);
         }
     }
 }
